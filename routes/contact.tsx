@@ -25,7 +25,7 @@ export default define.page(function Contact() {
         </PageHero>
 
         <section class="bg-white">
-          <div class="mx-auto grid max-w-6xl gap-6 px-6 py-16 sm:px-8 lg:grid-cols-3 lg:px-12 lg:py-20">
+          <div class="mx-auto grid max-w-6xl gap-6 px-6 py-16 sm:px-8 sm:grid-cols-2 lg:grid-cols-4 lg:px-12 lg:py-20">
             <article class="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
               <p class="text-sm font-semibold uppercase tracking-[0.16em] text-sky-700">
                 Telephone
@@ -39,6 +39,22 @@ export default define.page(function Contact() {
                   href={company.phoneHref}
                 >
                   {company.phoneDisplay}
+                </a>
+              </p>
+            </article>
+            <article class="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
+              <p class="text-sm font-semibold uppercase tracking-[0.16em] text-sky-700">
+                Email
+              </p>
+              <h2 class="mt-3 text-2xl font-semibold text-slate-950">
+                Send a message
+              </h2>
+              <p class="mt-4 leading-7 text-slate-700">
+                <a
+                  class="break-all font-semibold text-sky-700 hover:text-sky-900"
+                  href={company.emailHref}
+                >
+                  {company.emailDisplay}
                 </a>
               </p>
             </article>

@@ -8,6 +8,8 @@ export const company = {
     "A focused consulting practice for 9-1-1 organizations that need dependable analytics, data science support, and presentation-ready insights.",
   phoneDisplay: "+1 804-246-8797",
   phoneHref: "tel:+18042468797",
+  emailDisplay: "info@dunsworth-mann.com",
+  emailHref: "mailto:info@dunsworth-mann.com",
   address: {
     street: "P.O. Box 252",
     city: "Caret",
