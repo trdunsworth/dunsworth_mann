@@ -15,6 +15,7 @@ export default define.page(function Home() {
       <PageSeo
         title="9-1-1 Data Analytics and Data Science Consulting"
         description={company.mission}
+        pagePath="/"
       />
       <main id="main-content">
         <section class="brand-panel text-white">

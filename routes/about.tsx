@@ -9,6 +9,7 @@ export default define.page(function About() {
       <PageSeo
         title="About us"
         description="Learn about Dunsworth, Mann, & Associates, LLC and the leadership behind its 9-1-1 analytics and data science consulting work."
+        pagePath="/about"
       />
       <main id="main-content">
         <PageHero

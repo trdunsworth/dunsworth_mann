@@ -22,6 +22,12 @@ If Deno was installed into `~/.deno/bin`, add this to your shell profile:
 export PATH="$HOME/.deno/bin:$PATH"
 ```
 
+## Environment variables
+
+- `SITE_URL` (or `PUBLIC_SITE_URL`) sets the canonical base URL used for
+  `<link rel="canonical">`, `og:url`, and absolute social image URLs.
+- Example: `SITE_URL=https://www.dunsworth-mann.com`
+
 ## Project commands
 
 Run these from the project root:

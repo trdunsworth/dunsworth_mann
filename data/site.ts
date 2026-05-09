@@ -13,7 +13,7 @@ export const company = {
   address: {
     street: "P.O. Box 252",
     city: "Caret",
-    region: "VA.",
+    region: "VA",
     postalCode: "22436",
     country: "USA",
   },

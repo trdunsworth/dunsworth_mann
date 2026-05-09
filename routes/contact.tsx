@@ -9,6 +9,7 @@ export default define.page(function Contact() {
       <PageSeo
         title="Contact us"
         description="Contact Dunsworth, Mann, & Associates, LLC for 9-1-1 analytics, data science, and presentation support."
+        pagePath="/contact"
       />
       <main id="main-content">
         <PageHero
@@ -51,7 +52,7 @@ export default define.page(function Contact() {
               </h2>
               <p class="mt-4 leading-7 text-slate-700">
                 <a
-                  class="break-all font-semibold text-sky-700 hover:text-sky-900"
+                  class="break-words font-semibold text-sky-700 hover:text-sky-900"
                   href={company.emailHref}
                 >
                   {company.emailDisplay}

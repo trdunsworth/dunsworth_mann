@@ -9,6 +9,7 @@ export default define.page(function Services() {
       <PageSeo
         title="Our services"
         description="Services offered by Dunsworth, Mann, & Associates, LLC for 9-1-1 analytics, data science, governance, and executive communication."
+        pagePath="/services"
       />
       <main id="main-content">
         <PageHero

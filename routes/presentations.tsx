@@ -13,6 +13,7 @@ export default define.page(function Presentations() {
       <PageSeo
         title="Presentations past and present"
         description="Presentation topics and formats from Dunsworth, Mann, & Associates, LLC for 9-1-1 leaders, boards, and public safety stakeholders."
+        pagePath="/presentations"
       />
       <main id="main-content">
         <PageHero

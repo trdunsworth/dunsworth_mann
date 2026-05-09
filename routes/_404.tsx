@@ -25,7 +25,7 @@ export default define.page(function NotFound() {
           404
         </p>
         <h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-          That page could not be found.
+          We apologize, statistically you should not have arrived here, but you have.
         </h1>
         <p class="max-w-2xl text-lg leading-8 text-slate-700">
           The link may be out of date, or the page may have moved while the site
