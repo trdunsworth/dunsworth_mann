@@ -6,22 +6,20 @@
     "build": "vite build",
     "start": "deno serve -A _fresh/server.js",
     "update": "deno run -A -r jsr:@fresh/update .",
-    "preview": "deno run -A main.ts"
+    "preview": "deno serve -A _fresh/server.js"
   },
   "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "exclude": ["**/_fresh/*"],
   "imports": {
     "@/": "./",
-    "fresh": "jsr:@fresh/core@^2.2.2",
-    "preact": "https://esm.sh/preact@10.22.0",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "fresh": "jsr:@fresh/core@^2.3.3",
+    "preact": "npm:preact@^10.29.1",
+    "@preact/signals": "npm:@preact/signals@^2.9.0",
     "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.8",
     "vite": "npm:vite@^7.1.3",
     "tailwindcss": "npm:tailwindcss@^4.1.10",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.12",
-    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
-    "preact/": "https://esm.sh/preact@10.22.0/",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1"
+    "preact/": "npm:/preact@^10.29.1/"
   },
   "compilerOptions": {
     "lib": ["dom", "dom.asynciterable", "dom.iterable", "deno.ns"],

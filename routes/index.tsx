@@ -31,7 +31,7 @@ export default define.page(function Home() {
                 </h1>
                 <p class="max-w-2xl text-lg leading-8 text-slate-200">
                   {company.shortName}{" "}
-                  helps emergency communications leaders uncover patterns,
+                  helps emergency communications centers uncover patterns,
                   improve reporting, and communicate complex findings with
                   clarity.
                 </p>
@@ -127,9 +127,7 @@ export default define.page(function Home() {
                 operations.
               </h2>
               <p class="text-lg leading-8 text-slate-700">
-                The site is organized around a small set of services so it stays
-                easy to grow. The company content lives in one shared data file,
-                making updates straightforward as the practice expands.
+                As a smaller company, we're able to be more. flexible in our approach to your center's needs. We can also customize our solutions more easily to suit your needs.
               </p>
             </div>
             <div class="mt-10 grid gap-6 lg:grid-cols-2">

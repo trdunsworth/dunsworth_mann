@@ -20,13 +20,13 @@ export const company = {
   principals: [
     {
       name: "Ellen Dunsworth",
-      title: "President and CEO",
+      title: "President",
       bio:
         "Leads company strategy, client relationships, and the clear communication needed to make analytic work useful for decision-makers.",
     },
     {
       name: "Tony Dunsworth, PhD",
-      title: "CTO and Data Scientist",
+      title: "Principal Data Scientist",
       bio:
         "Leads technical strategy, analytics design, and data science work that helps public safety teams move from raw data to action.",
     },
@@ -73,7 +73,7 @@ export const services = [
     bullets: [
       "Performance measure design for call answer, transfer, dispatch, and workflow review",
       "Dashboard planning for leadership teams and public-facing reporting",
-      "Metric definitions that stay consistent across teams and reporting cycles",
+      "Report development that is targeted to the operations level needing the report",
     ],
   },
   {
@@ -82,8 +82,8 @@ export const services = [
       "Improve trust in the data before it reaches a dashboard, board packet, or strategic plan.",
     bullets: [
       "Source review across CAD, telephony, QA, and supporting data systems",
-      "Gap analysis for missing, duplicated, or inconsistent records",
-      "Practical cleanup and governance recommendations that can be sustained",
+      "Improve data literacy and documentation to support data quality",
+      "Practical management and governance recommendations that can be sustained",
     ],
   },
   {
