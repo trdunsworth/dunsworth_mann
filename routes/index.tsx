@@ -127,7 +127,9 @@ export default define.page(function Home() {
                 operations.
               </h2>
               <p class="text-lg leading-8 text-slate-700">
-                As a smaller company, we're able to be more. flexible in our approach to your center's needs. We can also customize our solutions more easily to suit your needs.
+                As a smaller company, we're able to be more flexible in our
+                approach to your center's needs. We can also customize our
+                solutions more easily to suit your needs.
               </p>
             </div>
             <div class="mt-10 grid gap-6 lg:grid-cols-2">
@@ -228,6 +230,9 @@ export default define.page(function Home() {
                         >
                           <p class="text-sm font-semibold uppercase tracking-[0.16em] text-sky-700">
                             {item.audience}
+                          </p>
+                          <p class="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                            Delivered {item.date}
                           </p>
                           <h4 class="mt-2 text-lg font-semibold text-slate-950">
                             {item.title}

@@ -135,7 +135,7 @@ export const values = [
   {
     title: "Clarity over noise",
     description:
-      "The goal is insight people can act on, not just more charts or more data extracts.",
+      "Our goal is insight people can act on, not just more charts or more data extracts.",
   },
   {
     title: "Operational fit",
@@ -151,52 +151,54 @@ export const values = [
 
 export const presentationCollections = [
   {
-    title: "Current focus areas",
+    title: "Recent Presentations",
     description:
-      "Topics aligned with the questions 9-1-1 leaders are facing right now.",
+      "The following is a list of presentations that we have given in the past. We update this page regularly to share new topics and formats as they are delivered.",
     items: [
       {
-        title: "From raw call data to operational decisions",
-        audience: "Leadership teams and executive stakeholders",
+        title:
+          "Decoding the Noise: Turning CAD Data into Trusted Operational Insights",
+        audience: "Executives, managers, and data analysts",
+        date: "May 2026",
         description:
-          "How to move from fragmented data exports to a decision-ready reporting rhythm.",
+          "In conjunction with 1Spatial, this webinar discussed the expansion of their 1Integrate product to include CAD data, ensuring cleaned and validated data for accurate reporting and analysis.",
       },
       {
-        title: "Forecasting workload without losing context",
-        audience: "Center leaders, planners, and analysts",
+        title: "It's About Time",
+        audience:
+          "CAD Analysts, Database Administrators, Data Scientists, and CAD Administrators",
+        date: "April 2026",
         description:
-          "Using practical data science methods to plan for demand, staffing pressure, and service change.",
+          "Delivered at CentralSquare's annual Engage conference for product users, this presentation discussed the use and challenges of the timestamps recorded in the Enterprise CAD product, and how to use them effectively for operational insights.",
       },
       {
-        title: "Designing dashboards that answer real questions",
+        title: "From Math to Meaning",
         audience: "Operations managers and quality leaders",
+        date: "January 2026",
         description:
-          "A framework for building reporting that supports action instead of producing clutter.",
-      },
-    ],
-  },
-  {
-    title: "Enduring 9-1-1 presentation themes",
-    description:
-      "Foundational topics that remain useful as systems, governance, and performance expectations evolve.",
-    items: [
-      {
-        title: "Building trust in public safety data",
-        audience: "Executives, boards, and partner agencies",
-        description:
-          "What data quality, governance, and documentation need to look like when decisions carry operational consequences.",
+          "Delivered at NENA's Standards and Best Practices conference, this presentation discussed how to use data analysis to support quality assurance programs with a focus on using both to support telecommunicators.",
       },
       {
-        title: "Telling the performance story behind the numbers",
-        audience: "Boards, community stakeholders, and internal leadership",
+        title:
+          "Data Collection Needs for Call Processing and Staffing Guidelines",
+        audience: "9-1-1 leaders and data analysts",
+        date: "October 2025",
         description:
-          "How to explain performance, tradeoffs, and risk with confidence and transparency.",
+          "Delivered at the NENA's Joint Committee Meeting, this presentation discussed the current efforts of two working groups to collect PSAP census data to address research needs for both working groups.",
       },
       {
-        title: "Using analytics to support continuous improvement",
-        audience: "QA teams, supervisors, and operational leaders",
+        title: "Do You Speak Statistics",
+        audience: "Operations managers, data analysts, and Floor supervisors",
+        date: "July 2025",
         description:
-          "Ways to connect routine reporting with improvement work that teams can actually sustain.",
+          "Delivered at NENA's Annual Conference, this presentation outlined uses for data analyses in PSAP operations, and how to use them effectively for operational insights.",
+      },
+      {
+        title: "Applying Analytics to 9-1-1",
+        audience: "9-1-1 leaders and data analysts",
+        date: "April 2025",
+        description:
+          "Delivered at the Virginia Conference on Innovation in Public Safety, this presentation outlined the use of data analytics to support operational and strategic decision-making in 9-1-1 centers.",
       },
     ],
   },

@@ -206,3 +206,100 @@ deno task start
 ```
 
 For day-to-day editing, `deno task dev` is enough.
+
+## Deploying to an external webserver
+
+This project is not deployed as plain static HTML alone. After
+`deno task build`, the production server entrypoint is the built file
+`_fresh/server.js`, which is served with Deno.
+
+### What to upload to the server
+
+For a production deployment on another host, copy at least these items:
+
+- `_fresh/`
+- `static/`
+- `deno.json`
+
+Keeping the full project checkout on the server is also fine and is often the
+simplest option.
+
+### Start the production server
+
+From the project root on the target host:
+
+```sh
+export SITE_URL=https://www.dunsworth-mann.com
+deno task start
+```
+
+That task runs:
+
+```sh
+deno serve -A _fresh/server.js
+```
+
+By default, `deno serve` listens on port `8000`. To bind a different host or
+port, start it directly instead of using the task:
+
+```sh
+SITE_URL=https://www.dunsworth-mann.com deno serve -A --hostname 127.0.0.1 --port 8000 _fresh/server.js
+```
+
+### Recommended production setup
+
+Use a reverse proxy in front of the Deno process. A common layout is:
+
+1. Build the site locally or on the server with `deno task build`
+2. Run the Deno app on `127.0.0.1:8000`
+3. Put Nginx or Apache in front of it for TLS, compression, and public traffic
+
+### Example Nginx configuration
+
+Point your public domain at Nginx, then proxy requests to the Deno process:
+
+```nginx
+server {
+   listen 80;
+   server_name www.dunsworth-mann.com dunsworth-mann.com;
+
+   location / {
+      proxy_pass http://127.0.0.1:8000;
+      proxy_http_version 1.1;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+   }
+}
+```
+
+If TLS is enabled, add your normal `listen 443 ssl` settings and certificate
+paths in the same server block or in a separate HTTPS block.
+
+### Keep the app running after logout
+
+For a real deployment, run the Deno server under a process manager such as:
+
+- `systemd`
+- `supervisord`
+- `pm2`
+
+The important detail is that the managed command should start the built server,
+not the dev server:
+
+```sh
+deno serve -A --hostname 127.0.0.1 --port 8000 _fresh/server.js
+```
+
+### Typical deployment sequence on a host
+
+```sh
+git pull
+deno task check
+deno task build
+SITE_URL=https://www.dunsworth-mann.com deno serve -A --hostname 127.0.0.1 --port 8000 _fresh/server.js
+```
+
+In production, the last command should usually be launched by your process
+manager rather than by an interactive shell.

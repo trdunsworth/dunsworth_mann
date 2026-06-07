@@ -18,8 +18,8 @@ export default define.page(function Presentations() {
       <main id="main-content">
         <PageHero
           eyebrow="Presentations"
-          title="Presentations built for today’s operational questions and the enduring challenges of 9-1-1."
-          description="This page is structured to showcase both current topics and long-running themes, making it easy to publish future event history, decks, or a blog-style insights section when needed."
+          title="These are some of the topics and formats we've presented on recently."
+          description="We give presentations regionally and nationally on topics related to 9-1-1 data, analytics, and decision support. Contact us if you would like us to speak at your next conference, workshop, or leadership briefing."
         >
           <a
             href="/contact"
@@ -30,8 +30,8 @@ export default define.page(function Presentations() {
         </PageHero>
 
         <section class="bg-white">
-          <div class="mx-auto max-w-6xl px-6 py-16 sm:px-8 lg:px-12 lg:py-20">
-            <div class="grid gap-8 xl:grid-cols-2">
+          <div class="w-full px-6 py-16 sm:px-8 lg:px-12 lg:py-20">
+            <div class="grid gap-8">
               {presentationCollections.map((collection) => (
                 <article
                   key={collection.title}
@@ -49,9 +49,13 @@ export default define.page(function Presentations() {
                         key={item.title}
                         class="rounded-2xl border border-slate-200 bg-white p-6"
                       >
-                        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-sky-700">
-                          {item.audience}
-                        </p>
+                        <div class="flex flex-wrap items-center gap-3 text-sm font-semibold uppercase tracking-[0.16em] text-sky-700">
+                          <p>{item.audience}</p>
+                          <span class="text-slate-400" aria-hidden="true">
+                            |
+                          </span>
+                          <p>{item.date}</p>
+                        </div>
                         <h3 class="mt-2 text-xl font-semibold text-slate-950">
                           {item.title}
                         </h3>
