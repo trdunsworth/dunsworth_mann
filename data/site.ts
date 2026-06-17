@@ -200,6 +200,18 @@ export const presentationCollections = [
         description:
           "Delivered at the Virginia Conference on Innovation in Public Safety, this presentation outlined the use of data analytics to support operational and strategic decision-making in 9-1-1 centers.",
       },
+      {
+        "title": "9-1-1 Data Analytics",
+        "audience": "9-1-1 data professionals",
+        "date": "April 2023",
+        "description": "Delivered at the Virginia APCO/NENA Joint Conference, this presentation discussed the use of analytics in 9-1-1 centers to improve operational performance and measure community impact.",
+      },
+      {
+        "title": "PSAP Scheduling",
+        "audience": "9-1-1 Futurists",
+        "date": "November 2022",
+        "description": "Delivered at the Northcentral Texas 9-1-1 Early Adopters Summit, this presentation diiscussed the first stages of building a new staffing algorithm to replace Erlang C and Erlang A. This preliminary talk focused on finding better methods to forecast 9-1 inbound call volumes to better inform staffing decisions and improve service levels.",
+      }
     ],
   },
 ] as const;
