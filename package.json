@@ -1,0 +1,14 @@
+{
+  "name": "dunsworth-mann-static",
+  "version": "1.0.0",
+  "description": "Static site for Dunsworth, Mann, & Associates",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/styles.css -o ./dist/assets/styles.css --minify",
+    "build": "npm run build:css && node scripts/build-static.js",
+    "dev": "npm run build:css -- --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.10",
+    "@tailwindcss/cli": "^4.1.10"
+  }
+}
