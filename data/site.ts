@@ -37,6 +37,7 @@ export const navigation = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About us" },
   { href: "/services", label: "Our services" },
+  { href: "/products", label: "Our products" },
   { href: "/presentations", label: "Presentations" },
   { href: "/contact", label: "Contact us" },
 ] as const;
@@ -244,4 +245,40 @@ export const contactChecklist = [
   "What data sources are already available",
   "Who needs the final analysis or presentation",
   "Any timelines, milestones, or public-facing deadlines",
+] as const;
+
+export const products = [
+  {
+    name: "SynthCCD",
+    status: "Available for licensing",
+    tagline: "Realistic synthetic CAD and call-center data for 9-1-1, without the privacy risk.",
+    description:
+      "SynthCCD generates synthetic 9-1-1 computer-assisted dispatch (CAD) incidents and hourly phone-center counts so centers, vendors, and researchers can build, test, and teach analytics on lifelike data. Every dataset is artificial from the ground up, making it safe to share for training, software testing, staffing studies, and conference demonstrations.",
+    bullets: [
+      "Lifelike CAD incidents with agency, priority, full lifecycle timestamps, personnel, and elapsed-time fields",
+      "Hourly 9-1-1, non-emergency, abandoned, and outbound call counts for demand and staffing analysis",
+      "Full street-address output with OpenStreetMap-backed addresses and local caching",
+      "Flexible exports: CSV, Parquet, JSON, YAML, GeoJSON, Shapefile, and direct database targets",
+      "Guided Textual TUI plus scriptable Typer CLI for repeatable dataset builds",
+    ],
+    cta: {
+      label: "View SynthCCD on GitHub",
+      href: "https://github.com/trdunsworth/SynthCCD",
+    },
+  },
+  {
+    name: "DMA Reporting Engine",
+    status: "Coming soon",
+    tagline: "Audience-ready 9-1-1 performance reporting, from the executive suite to the QA desk.",
+    description:
+      "The DMA Reporting Engine (working title) is an in-development, multi-language analytics platform that turns CAD and phone data into performance reports, compliance analysis, and operational dashboards tailored to each role in a center.",
+    bullets: [
+      "Reports for executives, operational managers, shift supervisors, QA/QI managers, and analysts",
+      "Built-in NENA, APCO, and NFPA 1710 compliance checks for answer time and alarm processing",
+      "Advanced analytics roadmap: forecasting, queueing models, control charts, and spatial hotspots",
+      "Specialized AI agents that explain methods and surface actionable recommendations",
+      "Consistent branded visualizations across Python, R, Julia, and SQL",
+    ],
+    cta: null,
+  },
 ] as const;
